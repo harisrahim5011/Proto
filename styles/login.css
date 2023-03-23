@@ -1,0 +1,126 @@
+*{
+	box-sizing : border-box;
+	font-family : montserrat ;
+	color : #3b3e40;
+	font-size : large ;
+}
+body{
+	display : grid;
+	grid-template-columns : repeat(3, 1fr);
+	height : 100vh;
+	background-color : #f5f0e4;
+}
+.main{
+	display : flex;
+	flex-direction : column;
+	align-items : center;
+	justify-content : center;
+}
+.container{
+	margin-bottom : 100px;
+}
+
+h1{
+	text-align : center;
+	font-size : 3em;
+}
+p{
+	text-align : center ;
+	margin-bottom : 40px ;
+	font-weight : bold ;
+}
+.seperator{
+	background-color : rgba(60, 179, 113, 0.5) ;
+	height : 5px;
+	margin-bottom : 20px;
+	border-radius : 50px;
+	width : 80%;
+	margin-left : 10%;
+}
+form {
+	display : flex;
+	flex-direction : column;
+	align-items : center ;
+
+}
+
+input[type=text],input[type=password]{
+	outline : none;
+	border : none;
+	background-color : #5ee0da;
+	border-radius : 50px;
+	margin-bottom : 10px;
+	padding : 15px ;
+	padding-left: 35px;
+	width :  20em;
+	box-shadow: 0px 1px 3px grey;
+}
+/* Change the white to any color */
+input:-webkit-autofill{
+    /* -webkit-box-shadow: 0 0 0 30px white inset !important; */
+	background-color: red;
+}
+input[type=submit]{
+	outline : none;
+	border : none;
+	border-radius : 50px;
+	padding : 10px ;
+	width :  10em;
+	margin-top : 20px ;
+	background-color : rgba(60, 179, 113, 0.5) ;
+}
+input[type=submit]:hover{
+	color : green;
+	background: linear-gradient(0deg, rgba(34,193,195,1) 15%, rgba(117,167,110,1) 84%);
+	color : white ;
+}
+span{
+	color : red;
+	display : none;
+}
+svg{
+	position: absolute;
+	bottom: 313px;
+	right: 510px;
+
+}
+
+/* profile portion */
+.profile{
+	background-color: blue;
+	min-width: 30rem;
+	/* display: inline-block; */
+
+}
+.profileImage{
+	border: 5px solid red;
+	max-width: 2em;
+	
+}
+@media screen and (max-width: 380px) {
+	.container{
+		display: flex;
+		flex-direction: column;
+		/* flex: 1; */
+		align-items: center;
+	}
+	.left {
+		display: none;
+	}
+
+	.right {
+		display: none;
+	}
+
+	body {
+		grid-template-columns: 1fr;
+	}
+
+	input[type=text],input[type=password]{
+	
+		width: 100%;
+	}
+	input[type=submit]{
+		width : 50%;
+	}
+}

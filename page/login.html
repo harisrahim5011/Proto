@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="../styles/main.css" />
+	<link rel="stylesheet" href="../styles/login.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<style>
+
+	</style>
+
+</head>
+
+<body>
+	<section class="left" id="demo"></section>
+
+	<section class="main">
+		<div class="container">
+			<h1>Login</h1>
+			<p>Provide your login credentials</p>
+			<div class="seperator"> </div>
+
+			<form action="./profile.html" method="get" onsubmit="return validateLogin()">
+				<label for="userName">
+					<input type="text" placeholder="User Name: e.g; john" id="userName" name="Username">
+				</label>
+
+				<span id="userError">invalid or empty Username</span>
+
+				<input type="password" placeholder="Password: e.g; Abc*1234" id="pass" name="pass" />
+				<span id="passError">invalid or empty Password</span>
+
+				<input type="submit" value="Submit" id="submit22" />
+
+			</form>
+		</div>
+	</section>
+
+	<section class="right"></section>
+	<script src="../dist/login.js"></script>
+</body>
+
+</html>
